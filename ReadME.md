@@ -9,6 +9,16 @@ Github repository link: https://github.com/ADHIKSHA/Timezone_to_UTC
 Github repository link: https://github.com/ADHIKSHA/python_code
 
 ### Task 3
+These are the steps that I would follow to troubleshoot this situation : 
+1. Type the command "ifconfig" to check the network devices that are connected to the machine.
+If you are trying to connect to the internet through an Ethernet connection, you must find an entry with the label "eth0". If not found you can run the command "ifconfig eth0 up" to try and switch on the Ethernet connection.
+Again enter the command "ifconfig".If a new entry with label "eth0" is found with UP as the status then, the connection has been re-established. If no such entry was found or the status says DOWN then move to step 2.
+2. If the internet connection is still not working, then again run the command 'ifconfig' and check the IP address displayed of the connection I want to connect to. The IP address of the connection is displayed infront of the label 'inet addr' under the device name. If the IP address shown is different from the connection's IP address then, we need to configure the network's IP address. 
+Considering the network's IP address to be : 192.168.2.10.
+Then run the command, 'ifconfig eth0 192.168.2.10'.
+3. If the internet connection is still not working, then I would check if my Antivirus(if present) is blocking the internet connection.I would disable my antivirus and re-try connecting to the internet.
+4. Finally, I would check the LAN cables coming from the ISP to the router or my machine. Check if the router is configured properly. Plug in any loose wires.
+5. If nothing works, I would contact my ISP.
 
 
 ### Task 4
